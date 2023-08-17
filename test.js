@@ -20,7 +20,7 @@ function main() {
     const newContent = removeComments(content);
     fs.writeFileSync(file, newContent, "utf-8");
     execSync(`git add ${file}`);
-  });
+    });
 
   console.log("Removed comments from staged files.");
   process.exit(0);
